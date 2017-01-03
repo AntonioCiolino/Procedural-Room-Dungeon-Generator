@@ -10,7 +10,8 @@ namespace ooparts.dungen
 
 		public void Start()
 		{
-			transform.localScale *= RoomMapManager.TileSize;
+			if (RoomMapManager.TileSize > 0)
+				transform.localScale *= RoomMapManager.TileSize;
 		}
 	}
 }
